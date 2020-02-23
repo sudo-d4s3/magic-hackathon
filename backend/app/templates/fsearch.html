@@ -1,23 +1,30 @@
 {% extends "base.html" %}
 
+{% block css %}
+    <link rel="stylesheet" href="/static/css/fsearch.css?v=1.0">
+{% endblock %}
+
 {% block content %}
-<form action="" method="post" novalidate>
-    {{ form.hidden_tag() }}
-    <p>
-        {{ form.location.label }}<br>
-        {{ form.location }}
-        {% for error in form.location.errors %}
-        <span style="color: red;">[{{ error }}]</span>
-        {% endfor %}
-        <br>
-        {{ form.type.label }}<br>
-        {{ form.type }}
-        {% for error in form.type.errors %}
-        <span style="color: red;">[{{ error }}]</span>
-        {% endfor %}
-    </p>
-    <p>{{ form.submit() }}</p>
-</form>
+<div id="searchHolder">
+    <h1>Search</h1>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            <p>Location</p>
+            {{ form.location }}
+            {% for error in form.location.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+            <br>
+            {{ form.type.label }}<br>
+            {{ form.type }}
+            {% for error in form.type.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+</div>
 <br><br><br>
 <div class="">
         <h3>Lorem Ipsum from Acme, Inc</h3><br>

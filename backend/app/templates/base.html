@@ -21,13 +21,8 @@
                 <header>
                     <h2>BitApprentice</h2>
                     <nav id="pageLinks">
-<<<<<<< HEAD
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-=======
                         <a href="{{ url_for('index') }}">Home</a>
                         <a href="{{ url_for('index') }}#about">About</a>
->>>>>>> backend
                         {% if current_user.is_anonymous %}
                         <a href="{{ url_for('login') }}">Login</a>
                         {% else %}
