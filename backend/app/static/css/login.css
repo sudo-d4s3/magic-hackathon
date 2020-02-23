@@ -1,5 +1,38 @@
 body {
-    background-color: limegreen;
+    background-color: black;
+}
+
+form * {
+    color: white;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 72px;
+    color: white;
+}
+
+#formHolder {
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    border: none !important;
+    padding: 3px;
+    outline: none;
+    color: black;
+}
+
+#buttons {
+    display: flex;
+    height: 36px;
+    width: 262px;
+    justify-content: space-between;
 }
 
 form {
@@ -10,7 +43,7 @@ form {
 }
 
 input[type="submit"] {
-    background-color: #0d0d0d;
+    background-color: #2AC644;
     color: white !important;
     border: none;
     outline: none;
@@ -20,10 +53,14 @@ input[type="submit"] {
     line-height: 1.5;
     border-radius: .25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    order: 2;
+    width: 100%;
 }
 
 a[role="button"] {
     background-color: #0d0d0d;
     border: none !important;
     border-color: transparent !important;
+    order: -1;
+    width: 70%;
 }
