@@ -56,9 +56,15 @@ def foo():
 @app.route('/search', methods=['GET', 'POST'])
 def search():
         form = Searchform()
+        listing = [
+            {'title': "Lorem Ipsum from Acme, Inc", 'desc': "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales facilisis eros sed varius. Etiam vitae justo eu leo fermentum pharetra.", 'body':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales facilisis eros sed varius. Etiam vitae justo eu leo fermentum pharetra. Maecenas venenatis lorem neque, eget pharetra purus tempus quis. Quisque odio dolor, imperdiet at urna quis, dignissim viverra urna. Nunc non lectus venenatis, malesuada massa vitae, dignissim elit. Pellentesque luctus rutrum diam a ullamcorper. Maecenas ornare lobortis orci non gravida. Etiam eu congue velit, sit amet dapibus neque. Mauris eu auctor mi. Vestibulum sit amet sem non justo laoreet iaculis et ac odio. Nam non diam ac libero rhoncus feugiat.", 'location':"Maryland", 'type':"pentest"},
+            ]
         if form.validate_on_submit():
-            search_location = Listing.query.filter_by(location=form.location.data)
-            search_type = Listing.query.filter_by(type=form.type.data)
-            return render_template('search.html', form=form, listing1=search_location, listing2=search_type)
+            return redirect(url_for('fsearch'))
 
-        return  render_template('search.html', form=form)
+        return  render_template('search.html', form=form, listing1=listing)
+
+@app.route('/fsearch')
+def fsearch():
+        form = Searchform()
+        return render_template('fsearch.html', form=form)
