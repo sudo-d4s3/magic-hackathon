@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.location.label }}<br>
+        {{ form.location }}
+        {% for error in form.location.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+        <br>
+        {{ form.type.label }}<br>
+        {{ form.type }}
+        {% for error in form.type.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </p>
+    <p>{{ form.submit() }}</p>
+</form>
+<br><br><br>
+{% for listing in listing1 %}
+<div class="">
+        <p>{{ listing1.title.data }}</p>
+        <p>{{ listing1.desc.data }}</p>
+</div>
+{% endfor %}
+{% endblock %}

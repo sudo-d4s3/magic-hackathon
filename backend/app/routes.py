@@ -1,10 +1,9 @@
 from flask import render_template, flash, redirect, url_for, request
 from app import app, db
-from app.forms import LoginForm
+from app.forms import LoginForm, RegistrationForm, Searchform
 from flask_login import current_user, login_user, logout_user, login_required
-from app.models import User
+from app.models import User, Listing
 from werkzeug.urls import url_parse
-from app.forms import RegistrationForm
 
 @app.route('/')
 @app.route('/index')
@@ -53,3 +52,13 @@ def register():
 @login_required
 def foo():
         return "bar"
+
+@app.route('/search', methods=['GET', 'POST'])
+def search():
+        form = Searchform()
+        if form.validate_on_submit():
+            search_location = Listing.query.filter_by(location=form.location.data)
+            search_type = Listing.query.filter_by(type=form.type.data)
+            return render_template('search.html', form=form, listing1=search_location, listing2=search_type)
+
+        return  render_template('search.html', form=form)
