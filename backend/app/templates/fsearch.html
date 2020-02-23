@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.location.label }}<br>
+        {{ form.location }}
+        {% for error in form.location.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+        <br>
+        {{ form.type.label }}<br>
+        {{ form.type }}
+        {% for error in form.type.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </p>
+    <p>{{ form.submit() }}</p>
+</form>
+<br><br><br>
+<div class="">
+        <h3>Lorem Ipsum from Acme, Inc</h3><br>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales facilisis eros sed varius. Etiam vitae justo eu leo fermentum pharetra</h4><br>
+        <p>Type: Pen Testing</p>
+        <p>Location: Maryland</p>
+        <br><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales facilisis eros sed varius. Etiam vitae justo eu leo fermentum pharetra. Maecenas venenatis lorem neque, eget pharetra purus tempus quis. Quisque odio dolor, imperdiet at urna quis, dignissim viverra urna. Nunc non lectus venenatis, malesuada massa vitae, dignissim elit. Pellentesque luctus rutrum diam a ullamcorper. Maecenas ornare lobortis orci non gravida. Etiam eu congue velit, sit amet dapibus neque. Mauris eu auctor mi. Vestibulum sit amet sem non justo laoreet iaculis et ac odio. Nam non diam ac libero rhoncus feugiat.</p>
+</div>
+{% endblock %}
