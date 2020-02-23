@@ -22,8 +22,12 @@ class User(UserMixin, db.Model):
 
 class Listing(db.Model):
         id = db.Column(db.Integer, primary_key=True)
+        title = db.Column(db.String(64), index=True)
+        desc = db.Column(db.String, index=True)
         body = db.Column(db.String, index=True)
         timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+        location = db.Column(db.String, index=True)
+        type = db.Column(db.String, index=True)
         user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
         def __repr__(self):
