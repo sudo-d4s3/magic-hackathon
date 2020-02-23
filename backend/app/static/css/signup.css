@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+    height: 120vh;
+}
+
+form * {
+    color: white;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 72px;
+    color: white;
+}
+
+#formHolder {
+    display: flex;
+    width: 100vw;
+    height: 120vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+li {
+    display: inline !important;
+    margin-right: 40px;
+}
+
+label {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#type-1 {
+    margin-left: 50px;
+}
+
+input {
+    border: none !important;
+    padding: 3px;
+    outline: none;
+    color: black;
+}
+
+#buttons {
+    display: flex;
+    height: 36px;
+    width: 262px;
+    justify-content: space-between;
+}
+
+
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input[type="submit"] {
+    background-color: #2AC644;
+    color: white !important;
+    border: none;
+    outline: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    order: 2;
+    width: 100%;
+}
