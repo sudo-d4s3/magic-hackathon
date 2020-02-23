@@ -8,20 +8,21 @@
                 <title>BitApprentice</title>
                 {% endif %}
                 <meta name="description" content="BitApprentice">
-         	<meta name="author" content="BitApprentice">
+         	  <meta name="author" content="BitApprentice">
 
                 <link rel="stylesheet" href="/static/css/styles.css?v=1.0">
                 <link rel="stylesheet" href="/static/css/bootstrap-reboot.min.css?v=1.0">
                 <link rel="stylesheet" href="/static/css/bootstrap.min.css?v=1.0">
                 <link href="https://fonts.googleapis.com/css?family=Raleway:900&display=swap" rel="stylesheet">
+                {% block css %}{% endblock %}
 
         </head>
         <body>
                 <header>
                     <h2>BitApprentice</h2>
                     <nav id="pageLinks">
-                        <a>Home</a>
-                        <a>About</a>
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
                         {% if current_user.is_anonymous %}
                         <a href="{{ url_for('login') }}">Login</a>
                         {% else %}

@@ -24,11 +24,18 @@ header * {
     width: 100%;
 }
 
-#pageLinks h4 {
+#pageLinks a {
+    font-size: 24px;
     margin-right: 10%;
 }
 
+a {
+    color: white !important;
+}
+
 header h2 {
+    position: relative;
+    top: 3px;
     width: fit-content;
     padding-right: 15px;
     padding-left: 15px;

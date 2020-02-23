@@ -1,0 +1,29 @@
+body {
+    background-color: limegreen;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input[type="submit"] {
+    background-color: #0d0d0d;
+    color: white !important;
+    border: none;
+    outline: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+a[role="button"] {
+    background-color: #0d0d0d;
+    border: none !important;
+    border-color: transparent !important;
+}
