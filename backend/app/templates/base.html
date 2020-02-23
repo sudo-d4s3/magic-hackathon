@@ -20,11 +20,12 @@
                 <header>
                     <h2>BitApprentice</h2>
                     <nav id="pageLinks">
-                        <a>Home</a>
-                        <a>About</a>
+                        <a href="{{ url_for('index') }}">Home</a>
+                        <a href="{{ url_for('index') }}#about">About</a>
                         {% if current_user.is_anonymous %}
                         <a href="{{ url_for('login') }}">Login</a>
                         {% else %}
+                        <a href="{{ url_for('search') }}">Search</a>
                         <a href="{{ url_for('logout') }}">Logout</a>
                         {% endif %}
                    </nav>
