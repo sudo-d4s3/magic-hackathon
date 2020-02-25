@@ -4,6 +4,11 @@
 ### Our Idea
 One of the [sponsors](https://cyai2024.org/) for the Hackathon wanted an easy way to connect them to students aged 16-21 who have an interest in cybersecurity.
 
+### The team
+d4s3 (Chandler) was the backend developer for our webapp
+Octahedron (Jake) was the frontend developers
+Devin (who doesn't have a handle) was our backup designer after the first one left
+
 ### Rundown Of What We Did each Day
 
 #### Day One
@@ -27,4 +32,6 @@ and working on our slides for the presentation.
 ### We ended up winning best tech!!
 ![picture of our trophy](./for_markdown/trophy.jpg "Our Trophy!!!")
 
-(I will link more pictures and our pitch video when it comes out then I'll archive the repo)
+[our pitch slides](https://bit.ly/32wHqW7 "Typically I Wouldn't link to anything google but we had to use goole slides")
+
+[Magic's blog](https://magicinc.org/hackathon-2020-winners)
