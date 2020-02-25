@@ -6,7 +6,9 @@ One of the [sponsors](https://cyai2024.org/) for the Hackathon wanted an easy wa
 
 ### The team
 d4s3 (Chandler) was the backend developer for our webapp
+
 Octahedron (Jake) was the frontend developers
+
 Devin (who doesn't have a handle) was our backup designer after the first one left
 
 ### Rundown Of What We Did each Day
@@ -30,8 +32,9 @@ The frontend developer was pulling double duty, trying to add css to all the oth
 and working on our slides for the presentation.
 
 ### We ended up winning best tech!!
-![picture of our trophy](./for_markdown/trophy.jpg "Our Trophy!!!")
-
-[our pitch slides](https://bit.ly/32wHqW7 "Typically I Wouldn't link to anything google but we had to use goole slides")
+[our pitch slides](https://bit.ly/32wHqW7 "Typically I Wouldn't link to anything google but we had to use google slides")
 
 [Magic's blog](https://magicinc.org/hackathon-2020-winners)
+![The team winning best tech](https://magicinc.org/wp-content/uploads/2020/02/Bit-Apprentice-Best-Tech-1024x409.jpg)
+
+![picture of our trophy](./for_markdown/trophy.jpg "Our Trophy!!!")
